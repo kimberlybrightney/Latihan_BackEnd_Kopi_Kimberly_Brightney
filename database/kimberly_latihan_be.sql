@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 12, 2026 at 02:48 PM
+-- Generation Time: Jun 12, 2026 at 03:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -68,7 +68,8 @@ CREATE TABLE `registrations` (
 --
 
 INSERT INTO `registrations` (`id`, `full_name`, `email`, `phone_number`, `course_id`, `participant_count`, `unit_price`, `is_followed_up`, `followed_up_by`, `followed_up_at`, `created_at`) VALUES
-(5, 'Andi', 'gugu@google.com', '08123456789', 3, 2, NULL, NULL, NULL, NULL, '2026-06-09 03:58:27');
+(5, 'Andi', 'gugu@google.com', '08123456789', 3, 2, NULL, 1, 1, '2026-06-12 20:20:24', '2026-06-09 03:58:27'),
+(6, 'admin', 'admin@gmail.com', '08123456788', 1, 1, NULL, 1, 1, '2026-06-12 20:22:45', '2026-06-12 13:21:48');
 
 -- --------------------------------------------------------
 
@@ -128,7 +129,7 @@ ALTER TABLE `courses`
 -- AUTO_INCREMENT for table `registrations`
 --
 ALTER TABLE `registrations`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`
